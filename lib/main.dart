@@ -5,6 +5,8 @@ import 'package:flutter_application_1/lms/super_Admin_home.dart';
 import 'package:flutter_application_1/screen.dart';
 import 'package:flutter_application_1/utils/Sizeconfig.dart';
 
+import 'trainers/TrainerHome.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         return const MaterialApp(
           title: 'LMS',
           debugShowCheckedModeBanner: false,
-          home: SuperAdmin(),
+          home: TrainerHome(),
         );
       });
     });
