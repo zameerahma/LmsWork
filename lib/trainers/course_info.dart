@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/trainers/Inbox.dart';
+import 'package:flutter_application_1/trainers/LeaderBoard.dart';
+import 'package:flutter_application_1/trainers/LiveSession.dart';
+import 'package:flutter_application_1/trainers/Modules.dart';
 
 import '../lms/super_Admin_home.dart';
 import '../utils/responsive.dart';
@@ -78,8 +82,8 @@ class CourseInfo extends StatelessWidget {
               SuperButton(
                 title: "Modules".toUpperCase(),
                 ontap: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => Account()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Modules()));
                 },
               ),
               SizedBox(
@@ -108,8 +112,8 @@ class CourseInfo extends StatelessWidget {
               SuperButton(
                 title: "Private Messages".toUpperCase(),
                 ontap: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => Calender()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Inbox()));
                 },
               ),
               SizedBox(
@@ -128,15 +132,18 @@ class CourseInfo extends StatelessWidget {
               SuperButton(
                 title: "LeadeBoard".toUpperCase(),
                 ontap: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => History()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LeaderBoard()));
                 },
               ),
               SizedBox(
                 height: 40,
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LiveSession()));
+                  },
                   style: TextButton.styleFrom(
                       backgroundColor: Colors.red,
                       minimumSize: Size(300, 45),

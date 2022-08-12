@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lms/super_Admin_home.dart';
 
 import '../utils/responsive.dart';
-import 'ViewEmployeeProgress.dart';
-import 'ViewTrainerProgress.dart';
 
-class ViewProgress extends StatelessWidget {
-  const ViewProgress({Key? key}) : super(key: key);
+class ViewTrainerProgress extends StatelessWidget {
+  const ViewTrainerProgress({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +28,7 @@ class ViewProgress extends StatelessWidget {
               height: 10,
             ),
             Text(
-              'View Progress',
+              'Trainer Progress',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w400,
@@ -41,20 +39,40 @@ class ViewProgress extends StatelessWidget {
               height: 50,
             ),
             SuperButton(
-              title: "Trainers".toUpperCase(),
+              title: "Courses Created".toUpperCase(),
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ViewTrainerProgress()));
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => AddAdmin()));
               },
             ),
             SizedBox(
               height: 20,
             ),
             SuperButton(
-              title: "Employees".toUpperCase(),
+              title: "Student Enrolled (Overall & per course)".toUpperCase(),
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ViewEmployeeProgress()));
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => AssignRoles()));
+              },
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SuperButton(
+              title: "Results (per course)".toUpperCase(),
+              ontap: () {
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => AssignRoles()));
+              },
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SuperButton(
+              title: "Reports".toUpperCase(),
+              ontap: () {
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (context) => AssignRoles()));
               },
             ),
           ],

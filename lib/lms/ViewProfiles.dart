@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lms/super_Admin_home.dart';
 
+import '../trainers/profile.dart';
 import '../utils/responsive.dart';
 
 class ViewProfiles extends StatelessWidget {
@@ -41,8 +42,8 @@ class ViewProfiles extends StatelessWidget {
             SuperButton(
               title: "Admins".toUpperCase(),
               ontap: () {
-                // Navigator.push(context,
-                //     MaterialPageRoute(builder: (context) => AddAdmin()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Profile()));
               },
             ),
             SizedBox(
@@ -51,8 +52,8 @@ class ViewProfiles extends StatelessWidget {
             SuperButton(
               title: "Trainers".toUpperCase(),
               ontap: () {
-                // Navigator.push(context,
-                //     MaterialPageRoute(builder: (context) => AssignRoles()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Profile()));
               },
             ),
             SizedBox(
@@ -60,7 +61,10 @@ class ViewProfiles extends StatelessWidget {
             ),
             SuperButton(
               title: "Employees".toUpperCase(),
-              ontap: () {},
+              ontap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Profile()));
+              },
             ),
           ],
         ),

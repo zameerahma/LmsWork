@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/lms/super_Admin_home.dart';
 
 import '../utils/responsive.dart';
-import 'ViewEmployeeProgress.dart';
-import 'ViewTrainerProgress.dart';
 
-class ViewProgress extends StatelessWidget {
-  const ViewProgress({Key? key}) : super(key: key);
+
+class LeaderBoard extends StatelessWidget {
+  const LeaderBoard ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +29,7 @@ class ViewProgress extends StatelessWidget {
               height: 10,
             ),
             Text(
-              'View Progress',
+              'LeaderBoard',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w400,
@@ -41,22 +40,39 @@ class ViewProgress extends StatelessWidget {
               height: 50,
             ),
             SuperButton(
-              title: "Trainers".toUpperCase(),
+              title: "Top 10-20 employess".toUpperCase(),
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ViewTrainerProgress()));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => ViewTrainerProgress()));
               },
             ),
             SizedBox(
-              height: 20,
+              height: 50,
             ),
             SuperButton(
-              title: "Employees".toUpperCase(),
+              title: "Course Performance".toUpperCase(),
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ViewEmployeeProgress()));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => ViewTrainerProgress()));
               },
             ),
+            SizedBox(
+              height: 50,
+            ),
+            SuperButton(
+              title: "Learning performance".toUpperCase(),
+              ontap: () {
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => ViewTrainerProgress()));
+              },
+            ),
+           
           ],
         ),
       ),

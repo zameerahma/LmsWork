@@ -218,7 +218,7 @@ class CourseList extends StatelessWidget {
                 IconButton(
                     onPressed: tap,
                     icon: Icon(
-                      Icons.menu_open,
+                      Icons.perm_device_info_sharp,
                       color: Colors.purple,
                     )),
                 IconButton(

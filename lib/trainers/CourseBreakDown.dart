@@ -11,8 +11,8 @@ import 'Account.dart';
 import 'Dashboard.dart';
 import 'create_course.dart';
 
-class TrainerHome extends StatelessWidget {
-  const TrainerHome({Key? key}) : super(key: key);
+class CourseBreakDown extends StatelessWidget {
+  const CourseBreakDown({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class TrainerHome extends StatelessWidget {
                 ),
               ),
               Text(
-                'Trainer',
+                'Course BreakDown',
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
@@ -45,37 +45,57 @@ class TrainerHome extends StatelessWidget {
                 height: 20,
               ),
               SuperButton(
-                title: "Account".toUpperCase(),
+                title: "Module BreakDown with marks breakdown".toUpperCase(),
                 ontap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Account()));
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => Account()));
                 },
               ),
               SizedBox(
                 height: 20,
               ),
               SuperButton(
-                title: "DashBoard".toUpperCase(),
+                title: "Module ADD Options".toUpperCase(),
                 ontap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DashBoard()));
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => DashBoard()));
                 },
               ),
               SizedBox(
                 height: 20,
               ),
               SuperButton(
-                title: "Add Courses".toUpperCase(),
+                title: "Material Upload".toUpperCase(),
                 ontap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CreateCourse()));
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => CreateCourse()));
                 },
               ),
               SizedBox(
                 height: 20,
               ),
               SuperButton(
-                title: "Calender".toUpperCase(),
+                title: "Progress(student wise and course)".toUpperCase(),
+                ontap: () {
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => Clander()));
+                },
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SuperButton(
+                title: "discussion Board".toUpperCase(),
+                ontap: () {
+                  // Navigator.push(
+                  //     context, MaterialPageRoute(builder: (context) => Inbox()));
+                },
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SuperButton(
+                title: "Clander".toUpperCase(),
                 ontap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Clander()));
@@ -85,20 +105,10 @@ class TrainerHome extends StatelessWidget {
                 height: 20,
               ),
               SuperButton(
-                title: "inbox".toUpperCase(),
+                title: "Results".toUpperCase(),
                 ontap: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Inbox()));
-                },
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              SuperButton(
-                title: "History".toUpperCase(),
-                ontap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => History ()));
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => Clander()));
                 },
               ),
               SizedBox(
